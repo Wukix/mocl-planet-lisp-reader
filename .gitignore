@@ -1,0 +1,8 @@
+*.fasl
+*~
+*#
+.#*
+*.[oa]
+TAGS
+xcuserdata
+mocl

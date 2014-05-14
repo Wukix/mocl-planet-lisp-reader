@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		238C4BB1191BED1100F84A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BB0191BED1100F84A37 /* Foundation.framework */; };
+		238C4BB3191BED1100F84A37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BB2191BED1100F84A37 /* CoreGraphics.framework */; };
+		238C4BB5191BED1100F84A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BB4191BED1100F84A37 /* UIKit.framework */; };
+		238C4BBB191BED1100F84A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238C4BB9191BED1100F84A37 /* InfoPlist.strings */; };
+		238C4BBD191BED1100F84A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BBC191BED1100F84A37 /* main.m */; };
+		238C4BC1191BED1100F84A37 /* LispAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BC0191BED1100F84A37 /* LispAppDelegate.m */; };
+		238C4BC4191BED1100F84A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238C4BC2191BED1100F84A37 /* Main.storyboard */; };
+		238C4BC7191BED1100F84A37 /* LispMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BC6191BED1100F84A37 /* LispMasterViewController.m */; };
+		238C4BCA191BED1100F84A37 /* LispDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BC9191BED1100F84A37 /* LispDetailViewController.m */; };
+		238C4BCC191BED1100F84A37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238C4BCB191BED1100F84A37 /* Images.xcassets */; };
+		238C4BD3191BED1100F84A37 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BD2191BED1100F84A37 /* XCTest.framework */; };
+		238C4BD4191BED1100F84A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BB0191BED1100F84A37 /* Foundation.framework */; };
+		238C4BD5191BED1100F84A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BB4191BED1100F84A37 /* UIKit.framework */; };
+		238C4BDD191BED1100F84A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238C4BDB191BED1100F84A37 /* InfoPlist.strings */; };
+		238C4BDF191BED1100F84A37 /* PlanetLispTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BDE191BED1100F84A37 /* PlanetLispTests.m */; };
+		238C4BE9191BED1900F84A37 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BE8191BED1900F84A37 /* libz.dylib */; };
+		238C4BFD191BED9200F84A37 /* libmocl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BF3191BED9200F84A37 /* libmocl.a */; };
+		238C4BFE191BED9300F84A37 /* program.c in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BFA191BED9200F84A37 /* program.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		238C4BD6191BED1100F84A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238C4BA5191BED1100F84A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 238C4BAC191BED1100F84A37;
+			remoteInfo = PlanetLisp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		238C4BAD191BED1100F84A37 /* PlanetLisp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetLisp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		238C4BB0191BED1100F84A37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		238C4BB2191BED1100F84A37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		238C4BB4191BED1100F84A37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		238C4BB8191BED1100F84A37 /* PlanetLisp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlanetLisp-Info.plist"; sourceTree = "<group>"; };
+		238C4BBA191BED1100F84A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		238C4BBC191BED1100F84A37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		238C4BBE191BED1100F84A37 /* PlanetLisp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanetLisp-Prefix.pch"; sourceTree = "<group>"; };
+		238C4BBF191BED1100F84A37 /* LispAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LispAppDelegate.h; sourceTree = "<group>"; };
+		238C4BC0191BED1100F84A37 /* LispAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LispAppDelegate.m; sourceTree = "<group>"; };
+		238C4BC3191BED1100F84A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		238C4BC5191BED1100F84A37 /* LispMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LispMasterViewController.h; sourceTree = "<group>"; };
+		238C4BC6191BED1100F84A37 /* LispMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LispMasterViewController.m; sourceTree = "<group>"; };
+		238C4BC8191BED1100F84A37 /* LispDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LispDetailViewController.h; sourceTree = "<group>"; };
+		238C4BC9191BED1100F84A37 /* LispDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LispDetailViewController.m; sourceTree = "<group>"; };
+		238C4BCB191BED1100F84A37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		238C4BD1191BED1100F84A37 /* PlanetLispTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetLispTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		238C4BD2191BED1100F84A37 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		238C4BDA191BED1100F84A37 /* PlanetLispTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlanetLispTests-Info.plist"; sourceTree = "<group>"; };
+		238C4BDC191BED1100F84A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		238C4BDE191BED1100F84A37 /* PlanetLispTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetLispTests.m; sourceTree = "<group>"; };
+		238C4BE8191BED1900F84A37 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		238C4BEB191BED9200F84A37 /* bn_ap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_ap.h; sourceTree = "<group>"; };
+		238C4BEC191BED9200F84A37 /* bn_fmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_fmt.h; sourceTree = "<group>"; };
+		238C4BED191BED9200F84A37 /* bn_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_mem.h; sourceTree = "<group>"; };
+		238C4BEE191BED9200F84A37 /* bn_xp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_xp.h; sourceTree = "<group>"; };
+		238C4BEF191BED9200F84A37 /* c_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_decl.h; sourceTree = "<group>"; };
+		238C4BF0191BED9200F84A37 /* call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call.h; sourceTree = "<group>"; };
+		238C4BF1191BED9200F84A37 /* call_in.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_in.h; sourceTree = "<group>"; };
+		238C4BF2191BED9200F84A37 /* inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inline.h; sourceTree = "<group>"; };
+		238C4BF3191BED9200F84A37 /* libmocl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmocl.a; sourceTree = "<group>"; };
+		238C4BF4191BED9200F84A37 /* lisp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp.h; sourceTree = "<group>"; };
+		238C4BF5191BED9200F84A37 /* mocl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl.h; sourceTree = "<group>"; };
+		238C4BF6191BED9200F84A37 /* mocl_autodef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_autodef.h; sourceTree = "<group>"; };
+		238C4BF7191BED9200F84A37 /* mocl_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_config.h; sourceTree = "<group>"; };
+		238C4BF8191BED9200F84A37 /* obrep1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1.h; sourceTree = "<group>"; };
+		238C4BF9191BED9200F84A37 /* obrep1_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1_form.h; sourceTree = "<group>"; };
+		238C4BFA191BED9200F84A37 /* program.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = program.c; sourceTree = "<group>"; };
+		238C4BFB191BED9200F84A37 /* program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = program.h; sourceTree = "<group>"; };
+		238C4BFC191BED9200F84A37 /* sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238C4BAA191BED1100F84A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BE9191BED1900F84A37 /* libz.dylib in Frameworks */,
+				238C4BB3191BED1100F84A37 /* CoreGraphics.framework in Frameworks */,
+				238C4BFD191BED9200F84A37 /* libmocl.a in Frameworks */,
+				238C4BB5191BED1100F84A37 /* UIKit.framework in Frameworks */,
+				238C4BB1191BED1100F84A37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238C4BCE191BED1100F84A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BD3191BED1100F84A37 /* XCTest.framework in Frameworks */,
+				238C4BD5191BED1100F84A37 /* UIKit.framework in Frameworks */,
+				238C4BD4191BED1100F84A37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		238C4BA4191BED1100F84A37 = {
+			isa = PBXGroup;
+			children = (
+				238C4BB6191BED1100F84A37 /* PlanetLisp */,
+				238C4BD8191BED1100F84A37 /* PlanetLispTests */,
+				238C4BAF191BED1100F84A37 /* Frameworks */,
+				238C4BAE191BED1100F84A37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		238C4BAE191BED1100F84A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BAD191BED1100F84A37 /* PlanetLisp.app */,
+				238C4BD1191BED1100F84A37 /* PlanetLispTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		238C4BAF191BED1100F84A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BE8191BED1900F84A37 /* libz.dylib */,
+				238C4BB0191BED1100F84A37 /* Foundation.framework */,
+				238C4BB2191BED1100F84A37 /* CoreGraphics.framework */,
+				238C4BB4191BED1100F84A37 /* UIKit.framework */,
+				238C4BD2191BED1100F84A37 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		238C4BB6191BED1100F84A37 /* PlanetLisp */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BEA191BED9200F84A37 /* mocl */,
+				238C4BBF191BED1100F84A37 /* LispAppDelegate.h */,
+				238C4BC0191BED1100F84A37 /* LispAppDelegate.m */,
+				238C4BC2191BED1100F84A37 /* Main.storyboard */,
+				238C4BC5191BED1100F84A37 /* LispMasterViewController.h */,
+				238C4BC6191BED1100F84A37 /* LispMasterViewController.m */,
+				238C4BC8191BED1100F84A37 /* LispDetailViewController.h */,
+				238C4BC9191BED1100F84A37 /* LispDetailViewController.m */,
+				238C4BCB191BED1100F84A37 /* Images.xcassets */,
+				238C4BB7191BED1100F84A37 /* Supporting Files */,
+			);
+			path = PlanetLisp;
+			sourceTree = "<group>";
+		};
+		238C4BB7191BED1100F84A37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BB8191BED1100F84A37 /* PlanetLisp-Info.plist */,
+				238C4BB9191BED1100F84A37 /* InfoPlist.strings */,
+				238C4BBC191BED1100F84A37 /* main.m */,
+				238C4BBE191BED1100F84A37 /* PlanetLisp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		238C4BD8191BED1100F84A37 /* PlanetLispTests */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BDE191BED1100F84A37 /* PlanetLispTests.m */,
+				238C4BD9191BED1100F84A37 /* Supporting Files */,
+			);
+			path = PlanetLispTests;
+			sourceTree = "<group>";
+		};
+		238C4BD9191BED1100F84A37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BDA191BED1100F84A37 /* PlanetLispTests-Info.plist */,
+				238C4BDB191BED1100F84A37 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		238C4BEA191BED9200F84A37 /* mocl */ = {
+			isa = PBXGroup;
+			children = (
+				238C4BEB191BED9200F84A37 /* bn_ap.h */,
+				238C4BEC191BED9200F84A37 /* bn_fmt.h */,
+				238C4BED191BED9200F84A37 /* bn_mem.h */,
+				238C4BEE191BED9200F84A37 /* bn_xp.h */,
+				238C4BEF191BED9200F84A37 /* c_decl.h */,
+				238C4BF0191BED9200F84A37 /* call.h */,
+				238C4BF1191BED9200F84A37 /* call_in.h */,
+				238C4BF2191BED9200F84A37 /* inline.h */,
+				238C4BF3191BED9200F84A37 /* libmocl.a */,
+				238C4BF4191BED9200F84A37 /* lisp.h */,
+				238C4BF5191BED9200F84A37 /* mocl.h */,
+				238C4BF6191BED9200F84A37 /* mocl_autodef.h */,
+				238C4BF7191BED9200F84A37 /* mocl_config.h */,
+				238C4BF8191BED9200F84A37 /* obrep1.h */,
+				238C4BF9191BED9200F84A37 /* obrep1_form.h */,
+				238C4BFA191BED9200F84A37 /* program.c */,
+				238C4BFB191BED9200F84A37 /* program.h */,
+				238C4BFC191BED9200F84A37 /* sys.h */,
+			);
+			path = mocl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		238C4BAC191BED1100F84A37 /* PlanetLisp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238C4BE2191BED1100F84A37 /* Build configuration list for PBXNativeTarget "PlanetLisp" */;
+			buildPhases = (
+				238C4BA9191BED1100F84A37 /* Sources */,
+				238C4BAA191BED1100F84A37 /* Frameworks */,
+				238C4BAB191BED1100F84A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetLisp;
+			productName = PlanetLisp;
+			productReference = 238C4BAD191BED1100F84A37 /* PlanetLisp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		238C4BD0191BED1100F84A37 /* PlanetLispTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238C4BE5191BED1100F84A37 /* Build configuration list for PBXNativeTarget "PlanetLispTests" */;
+			buildPhases = (
+				238C4BCD191BED1100F84A37 /* Sources */,
+				238C4BCE191BED1100F84A37 /* Frameworks */,
+				238C4BCF191BED1100F84A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				238C4BD7191BED1100F84A37 /* PBXTargetDependency */,
+			);
+			name = PlanetLispTests;
+			productName = PlanetLispTests;
+			productReference = 238C4BD1191BED1100F84A37 /* PlanetLispTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		238C4BA5191BED1100F84A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lisp;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Wukix;
+				TargetAttributes = {
+					238C4BD0191BED1100F84A37 = {
+						TestTargetID = 238C4BAC191BED1100F84A37;
+					};
+				};
+			};
+			buildConfigurationList = 238C4BA8191BED1100F84A37 /* Build configuration list for PBXProject "PlanetLisp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 238C4BA4191BED1100F84A37;
+			productRefGroup = 238C4BAE191BED1100F84A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				238C4BAC191BED1100F84A37 /* PlanetLisp */,
+				238C4BD0191BED1100F84A37 /* PlanetLispTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		238C4BAB191BED1100F84A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BCC191BED1100F84A37 /* Images.xcassets in Resources */,
+				238C4BBB191BED1100F84A37 /* InfoPlist.strings in Resources */,
+				238C4BC4191BED1100F84A37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238C4BCF191BED1100F84A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BDD191BED1100F84A37 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238C4BA9191BED1100F84A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BC1191BED1100F84A37 /* LispAppDelegate.m in Sources */,
+				238C4BC7191BED1100F84A37 /* LispMasterViewController.m in Sources */,
+				238C4BBD191BED1100F84A37 /* main.m in Sources */,
+				238C4BFE191BED9300F84A37 /* program.c in Sources */,
+				238C4BCA191BED1100F84A37 /* LispDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238C4BCD191BED1100F84A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238C4BDF191BED1100F84A37 /* PlanetLispTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		238C4BD7191BED1100F84A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 238C4BAC191BED1100F84A37 /* PlanetLisp */;
+			targetProxy = 238C4BD6191BED1100F84A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		238C4BB9191BED1100F84A37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C4BBA191BED1100F84A37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		238C4BC2191BED1100F84A37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C4BC3191BED1100F84A37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		238C4BDB191BED1100F84A37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238C4BDC191BED1100F84A37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		238C4BE0191BED1100F84A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		238C4BE1191BED1100F84A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		238C4BE3191BED1100F84A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
+				INFOPLIST_FILE = "PlanetLisp/PlanetLisp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlanetLisp/mocl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		238C4BE4191BED1100F84A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
+				INFOPLIST_FILE = "PlanetLisp/PlanetLisp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlanetLisp/mocl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		238C4BE6191BED1100F84A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlanetLisp.app/PlanetLisp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlanetLispTests/PlanetLispTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		238C4BE7191BED1100F84A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlanetLisp.app/PlanetLisp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
+				INFOPLIST_FILE = "PlanetLispTests/PlanetLispTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		238C4BA8191BED1100F84A37 /* Build configuration list for PBXProject "PlanetLisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238C4BE0191BED1100F84A37 /* Debug */,
+				238C4BE1191BED1100F84A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238C4BE2191BED1100F84A37 /* Build configuration list for PBXNativeTarget "PlanetLisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238C4BE3191BED1100F84A37 /* Debug */,
+				238C4BE4191BED1100F84A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		238C4BE5191BED1100F84A37 /* Build configuration list for PBXNativeTarget "PlanetLispTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238C4BE6191BED1100F84A37 /* Debug */,
+				238C4BE7191BED1100F84A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 238C4BA5191BED1100F84A37 /* Project object */;
+}
