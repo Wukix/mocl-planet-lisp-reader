@@ -1,6 +1,7 @@
 
 (require :html-entities)
 (require :wu-sugar)
+(use-package :wu-sugar)
 
 (defun xpath (expression xml)
   (let* ((target-path (rest (wu-sugar:split expression #\/)))
@@ -78,26 +79,37 @@
       (when http-stream (close http-stream)))))
 
 
-(defvar *items*)
+(defvar *items* nil)
 
 (defstruct rss title description link)
 
 (defun parse-rss (rss)
   (mapcar (lambda (item-xml)
             (make-rss :title (html-entities:decode-entities (xpath "/title" item-xml))
-                      :description (html-entities:decode-entities (xpath "/description" item-xml))
+                      ;; description with sans-serif font to match iOS, and title in the 
+                      ;; body to make navigation clearer
+                      :description (& "<div style='font-family:sans-serif'><h2>"
+                                      (html-entities:decode-entities (xpath "/title" item-xml))
+                                      "</h2>"
+                                      (html-entities:decode-entities (xpath "/description" item-xml))
+                                      "</div>")
                       :link (html-entities:decode-entities (xpath "/link" item-xml))))
           (xpath "///item" rss)))
 
+(rt:enable-objc-reader)
+
 (declaim (call-in load-rss))
-(defun load-rss ()
-  (setf *items* (parse-rss (http-get "planet.lisp.org" :query "/rss20.xml"))))
+(defun load-rss (self)
+  (handler-bind ((error (lambda (err)
+                          (declare (ignore err))
+                          (setf *items* nil)
+                          @(self showNetError)
+                          (return-from load-rss nil))))
+    (setf *items* (parse-rss (http-get "planet.lisp.org" :query "/rss20.xml")))))
 
 (declaim (call-in get-item-count))
 (defun get-item-count ()
   (length *items*))
-
-(rt:enable-objc-reader)
 
 (declaim (call-in config-cell))
 (defun config-cell (cell index)
@@ -113,3 +125,8 @@
 (defun load-content (self)
   @(self webView :loadHTMLString (rss-description (elt *items* *item-index*))
          :baseURL @('NSURL :URLWithString (rss-link (elt *items* *item-index*)))))
+
+(declaim (call-in open-external-browser))
+(defun open-external-browser ()
+  (let ((url (rss-link (elt *items* *item-index*))))
+    @('UIApplication sharedApplication :openURL @('NSURL :URLWithString url))))

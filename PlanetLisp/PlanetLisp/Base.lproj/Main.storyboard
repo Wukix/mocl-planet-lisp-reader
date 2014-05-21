@@ -56,7 +56,16 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Planet Lisp Reader" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Planet Lisp" id="tQt-TN-PWz">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="zrS-PO-kLU">
+                            <connections>
+                                <action selector="reload_Tap:" destination="pGg-6v-bdr" id="Fkj-jy-gBv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnReload" destination="zrS-PO-kLU" id="ung-gW-fts"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +80,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </webView>
-                    <navigationItem key="navigationItem" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" id="cra-N8-TIN">
+                        <barButtonItem key="rightBarButtonItem" title="Open in Safari" id="5fQ-NN-0rX">
+                            <connections>
+                                <action selector="openInSafari_Tap:" destination="Ah7-4n-0Wa" id="luF-DQ-LF2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="db9-hD-ERT" id="oK8-Xc-5eC"/>
                     </connections>

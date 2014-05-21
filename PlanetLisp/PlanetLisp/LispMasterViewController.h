@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LispMasterViewController : UITableViewController
-
+@interface LispMasterViewController : UITableViewController <UIAlertViewDelegate>
+- (void)reload;
+- (void)queueReload;
+- (void)enableUI;
+- (void)timedReload:(NSTimer *)timer;
+- (void)showNetError;
 @end

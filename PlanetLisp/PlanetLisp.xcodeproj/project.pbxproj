@@ -23,8 +23,8 @@
 		238C4BDD191BED1100F84A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238C4BDB191BED1100F84A37 /* InfoPlist.strings */; };
 		238C4BDF191BED1100F84A37 /* PlanetLispTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BDE191BED1100F84A37 /* PlanetLispTests.m */; };
 		238C4BE9191BED1900F84A37 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BE8191BED1900F84A37 /* libz.dylib */; };
-		238C4BFD191BED9200F84A37 /* libmocl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 238C4BF3191BED9200F84A37 /* libmocl.a */; };
-		238C4BFE191BED9300F84A37 /* program.c in Sources */ = {isa = PBXBuildFile; fileRef = 238C4BFA191BED9200F84A37 /* program.c */; };
+		23B7A6B419246863000A01E5 /* libmocl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7A6A819246862000A01E5 /* libmocl.a */; };
+		23B7A6B519246863000A01E5 /* program.c in Sources */ = {isa = PBXBuildFile; fileRef = 23B7A6AF19246862000A01E5 /* program.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,24 +60,24 @@
 		238C4BDC191BED1100F84A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		238C4BDE191BED1100F84A37 /* PlanetLispTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetLispTests.m; sourceTree = "<group>"; };
 		238C4BE8191BED1900F84A37 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		238C4BEB191BED9200F84A37 /* bn_ap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_ap.h; sourceTree = "<group>"; };
-		238C4BEC191BED9200F84A37 /* bn_fmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_fmt.h; sourceTree = "<group>"; };
-		238C4BED191BED9200F84A37 /* bn_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_mem.h; sourceTree = "<group>"; };
-		238C4BEE191BED9200F84A37 /* bn_xp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_xp.h; sourceTree = "<group>"; };
-		238C4BEF191BED9200F84A37 /* c_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_decl.h; sourceTree = "<group>"; };
-		238C4BF0191BED9200F84A37 /* call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call.h; sourceTree = "<group>"; };
-		238C4BF1191BED9200F84A37 /* call_in.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_in.h; sourceTree = "<group>"; };
-		238C4BF2191BED9200F84A37 /* inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inline.h; sourceTree = "<group>"; };
-		238C4BF3191BED9200F84A37 /* libmocl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmocl.a; sourceTree = "<group>"; };
-		238C4BF4191BED9200F84A37 /* lisp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp.h; sourceTree = "<group>"; };
-		238C4BF5191BED9200F84A37 /* mocl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl.h; sourceTree = "<group>"; };
-		238C4BF6191BED9200F84A37 /* mocl_autodef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_autodef.h; sourceTree = "<group>"; };
-		238C4BF7191BED9200F84A37 /* mocl_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_config.h; sourceTree = "<group>"; };
-		238C4BF8191BED9200F84A37 /* obrep1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1.h; sourceTree = "<group>"; };
-		238C4BF9191BED9200F84A37 /* obrep1_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1_form.h; sourceTree = "<group>"; };
-		238C4BFA191BED9200F84A37 /* program.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = program.c; sourceTree = "<group>"; };
-		238C4BFB191BED9200F84A37 /* program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = program.h; sourceTree = "<group>"; };
-		238C4BFC191BED9200F84A37 /* sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys.h; sourceTree = "<group>"; };
+		23B7A6A019246862000A01E5 /* bn_ap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_ap.h; sourceTree = "<group>"; };
+		23B7A6A119246862000A01E5 /* bn_fmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_fmt.h; sourceTree = "<group>"; };
+		23B7A6A219246862000A01E5 /* bn_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_mem.h; sourceTree = "<group>"; };
+		23B7A6A319246862000A01E5 /* bn_xp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn_xp.h; sourceTree = "<group>"; };
+		23B7A6A419246862000A01E5 /* c_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_decl.h; sourceTree = "<group>"; };
+		23B7A6A519246862000A01E5 /* call_in.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_in.h; sourceTree = "<group>"; };
+		23B7A6A619246862000A01E5 /* call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call.h; sourceTree = "<group>"; };
+		23B7A6A719246862000A01E5 /* inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inline.h; sourceTree = "<group>"; };
+		23B7A6A819246862000A01E5 /* libmocl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmocl.a; sourceTree = "<group>"; };
+		23B7A6A919246862000A01E5 /* lisp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp.h; sourceTree = "<group>"; };
+		23B7A6AA19246862000A01E5 /* mocl_autodef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_autodef.h; sourceTree = "<group>"; };
+		23B7A6AB19246862000A01E5 /* mocl_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl_config.h; sourceTree = "<group>"; };
+		23B7A6AC19246862000A01E5 /* mocl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mocl.h; sourceTree = "<group>"; };
+		23B7A6AD19246862000A01E5 /* obrep1_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1_form.h; sourceTree = "<group>"; };
+		23B7A6AE19246862000A01E5 /* obrep1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obrep1.h; sourceTree = "<group>"; };
+		23B7A6AF19246862000A01E5 /* program.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = program.c; sourceTree = "<group>"; };
+		23B7A6B019246862000A01E5 /* program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = program.h; sourceTree = "<group>"; };
+		23B7A6B319246863000A01E5 /* sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			files = (
 				238C4BE9191BED1900F84A37 /* libz.dylib in Frameworks */,
 				238C4BB3191BED1100F84A37 /* CoreGraphics.framework in Frameworks */,
-				238C4BFD191BED9200F84A37 /* libmocl.a in Frameworks */,
+				23B7A6B419246863000A01E5 /* libmocl.a in Frameworks */,
 				238C4BB5191BED1100F84A37 /* UIKit.framework in Frameworks */,
 				238C4BB1191BED1100F84A37 /* Foundation.framework in Frameworks */,
 			);
@@ -186,24 +186,24 @@
 		238C4BEA191BED9200F84A37 /* mocl */ = {
 			isa = PBXGroup;
 			children = (
-				238C4BEB191BED9200F84A37 /* bn_ap.h */,
-				238C4BEC191BED9200F84A37 /* bn_fmt.h */,
-				238C4BED191BED9200F84A37 /* bn_mem.h */,
-				238C4BEE191BED9200F84A37 /* bn_xp.h */,
-				238C4BEF191BED9200F84A37 /* c_decl.h */,
-				238C4BF0191BED9200F84A37 /* call.h */,
-				238C4BF1191BED9200F84A37 /* call_in.h */,
-				238C4BF2191BED9200F84A37 /* inline.h */,
-				238C4BF3191BED9200F84A37 /* libmocl.a */,
-				238C4BF4191BED9200F84A37 /* lisp.h */,
-				238C4BF5191BED9200F84A37 /* mocl.h */,
-				238C4BF6191BED9200F84A37 /* mocl_autodef.h */,
-				238C4BF7191BED9200F84A37 /* mocl_config.h */,
-				238C4BF8191BED9200F84A37 /* obrep1.h */,
-				238C4BF9191BED9200F84A37 /* obrep1_form.h */,
-				238C4BFA191BED9200F84A37 /* program.c */,
-				238C4BFB191BED9200F84A37 /* program.h */,
-				238C4BFC191BED9200F84A37 /* sys.h */,
+				23B7A6A019246862000A01E5 /* bn_ap.h */,
+				23B7A6A119246862000A01E5 /* bn_fmt.h */,
+				23B7A6A219246862000A01E5 /* bn_mem.h */,
+				23B7A6A319246862000A01E5 /* bn_xp.h */,
+				23B7A6A419246862000A01E5 /* c_decl.h */,
+				23B7A6A519246862000A01E5 /* call_in.h */,
+				23B7A6A619246862000A01E5 /* call.h */,
+				23B7A6A719246862000A01E5 /* inline.h */,
+				23B7A6A819246862000A01E5 /* libmocl.a */,
+				23B7A6A919246862000A01E5 /* lisp.h */,
+				23B7A6AA19246862000A01E5 /* mocl_autodef.h */,
+				23B7A6AB19246862000A01E5 /* mocl_config.h */,
+				23B7A6AC19246862000A01E5 /* mocl.h */,
+				23B7A6AD19246862000A01E5 /* obrep1_form.h */,
+				23B7A6AE19246862000A01E5 /* obrep1.h */,
+				23B7A6AF19246862000A01E5 /* program.c */,
+				23B7A6B019246862000A01E5 /* program.h */,
+				23B7A6B319246863000A01E5 /* sys.h */,
 			);
 			path = mocl;
 			sourceTree = "<group>";
@@ -256,6 +256,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Wukix;
 				TargetAttributes = {
+					238C4BAC191BED1100F84A37 = {
+						DevelopmentTeam = 5S5G66G3DF;
+					};
 					238C4BD0191BED1100F84A37 = {
 						TestTargetID = 238C4BAC191BED1100F84A37;
 					};
@@ -309,7 +312,7 @@
 				238C4BC1191BED1100F84A37 /* LispAppDelegate.m in Sources */,
 				238C4BC7191BED1100F84A37 /* LispMasterViewController.m in Sources */,
 				238C4BBD191BED1100F84A37 /* main.m in Sources */,
-				238C4BFE191BED9300F84A37 /* program.c in Sources */,
+				23B7A6B519246863000A01E5 /* program.c in Sources */,
 				238C4BCA191BED1100F84A37 /* LispDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +442,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
 				INFOPLIST_FILE = "PlanetLisp/PlanetLisp-Info.plist";
@@ -447,6 +452,7 @@
 					"$(PROJECT_DIR)/PlanetLisp/mocl",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CAC21E07-D640-4F51-9AA5-C8D6CFA68B54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -460,6 +466,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlanetLisp/PlanetLisp-Prefix.pch";
 				INFOPLIST_FILE = "PlanetLisp/PlanetLisp-Info.plist";
@@ -468,6 +476,7 @@
 					"$(PROJECT_DIR)/PlanetLisp/mocl",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CAC21E07-D640-4F51-9AA5-C8D6CFA68B54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -531,6 +540,7 @@
 				238C4BE4191BED1100F84A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		238C4BE5191BED1100F84A37 /* Build configuration list for PBXNativeTarget "PlanetLispTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +549,7 @@
 				238C4BE7191BED1100F84A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

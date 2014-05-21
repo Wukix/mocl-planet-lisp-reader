@@ -46,6 +46,10 @@
     load_content(self);
 }
 
+- (IBAction)openInSafari_Tap:(id)sender {
+    open_external_browser();
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
