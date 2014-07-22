@@ -42,7 +42,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-    
+   
+    /* from lisp:
+     (declaim (call-in load-content))
+     (defun load-content (self) ... )
+    */
     load_content(self);
 }
 
