@@ -38,6 +38,10 @@
 
 - (void)reload
 {
+    /* from lisp:
+     (declaim (call-in load-rss))
+     (defun load-rss (self) ...)
+     */
     load_rss(self);
     [[self tableView] reloadData];
     [self performSelector:@selector(enableUI) withObject:nil afterDelay:0.2];
@@ -115,6 +119,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    /* from lisp:
+     (declaim (call-in get-item-count))
+     (defun get-item-count () ... )
+    */
     long count = get_item_count();
     return count;
 }
@@ -123,6 +131,10 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
+    /* from lisp:
+     (declaim (call-in config-cell))
+     (defun config-cell (cell index) ... )
+     */
     config_cell(cell, indexPath.row);
     
     return cell;
@@ -165,7 +177,10 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
+        /* from lisp:
+         (declaim (call-in set-item-index))
+         (defun set-item-index (index) ... )
+        */
         set_item_index(indexPath.row);
     }
 }
